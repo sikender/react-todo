@@ -2,8 +2,10 @@ import React from 'react'
 
 const Todo = props => (
   <div>
-    <input type='checkbox' />
-    {props.todoText}
+    <a class="panel-block">
+      <input type="checkbox" />
+      {props.todoText}
+    </a>
   </div>
 )
 

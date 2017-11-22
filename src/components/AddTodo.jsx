@@ -12,7 +12,7 @@ export default class AddTodo extends React.Component {
     return (
       <div>
         <form onSubmit={this.addTodo}>
-          <input type='text' name='todo' />
+          <input className="input" type='text' name='todo' />
         </form>
       </div>
     )

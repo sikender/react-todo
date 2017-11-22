@@ -37,12 +37,15 @@ export default class TodoApp extends React.Component {
 
   render() {
     return (
-      <div>
-        <Header />
-        <AddTodo addTodo={this.addTodo} />
-        <Todos todos={this.state.todos} />
-        <Footer todosLeft={this.state.todos.length} />
+      <div className="section columns has-text-centered">
+        <div className="container column is-two-fifths">
+          <Header />
+          <AddTodo addTodo={this.addTodo} />
+          <Todos todos={this.state.todos} />
+          <Footer todosLeft={this.state.todos.length} />
+        </div>
       </div>
+      
     )
   }
 }

@@ -3,7 +3,7 @@ import React from 'react'
 import Todo from './Todo'
 
 const Todos = props => (
-  <div>
+  <div className="panel">
     {
       props.todos.map((todo, index) => (
         <Todo
